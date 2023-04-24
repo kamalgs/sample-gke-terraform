@@ -5,22 +5,22 @@ variable "GOOGLE_CREDENTIALS" {
 
 variable "project_id" {
   description = "your_project_id"
-  default= "wabbit-rk5"
+  default= "explore-ci-cd"
 }
 
 variable "region" {
   description = "The region to host the cluster in"
-  default     = "europe-west4"
+  default     = "asia-south2"
 }
 
 variable "zones" {
   description = "The region to host the cluster in"
-  default     = ["europe-west4-a"]
+  default     = ["asia-south2-a"]
 }
 
 variable "cluster_name" {
   description = "The name for the GKE cluster"
-  default     = "rafal-gke"
+  default     = "explore-ci-cd"
 }
 
 variable "env_name" {
