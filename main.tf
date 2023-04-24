@@ -63,7 +63,7 @@ module "gke" {
       name                  = "regional-pool"
       preeptible            = false
       machine_type          = "e2-medium"
-      image_type            = "UBUNTU"
+      image_type            = "ubuntu_containerd"
       disk_type             = "pd-balanced"
       disk_size_gb          = 30
       local_ssd_count       = 0
