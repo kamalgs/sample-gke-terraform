@@ -1,9 +1,9 @@
 variable "tfe_org" {
   description = "tfe organization"
-  default= "wabbit-dev"
+  default= "explore-ci-cd"
 }
 
 variable "tfe_workspace" {
   description = "tfe workspace"
-  default= "wabbit-rk5-tfe-workspace"
+  default= "sample-gke-terraform"
 }
