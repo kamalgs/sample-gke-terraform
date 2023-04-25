@@ -7,7 +7,7 @@ terraform {
   }
 }
 
-/* Remote backend for TFE 
+/* Remote backend for TFE */
 data "terraform_remote_state" "gke" {
   backend = "remote"
 
@@ -18,15 +18,16 @@ data "terraform_remote_state" "gke" {
     }
   }
 }
-*/
 
-/* Remote backend for local terraform execution */
+
+/* Remote backend for local terraform execution 
 data "terraform_remote_state" "gke" {
   backend = "local"
   config = {
     path = "../terraform.tfstate"
   }
 }
+*/
 
 
 provider "kubectl" {
